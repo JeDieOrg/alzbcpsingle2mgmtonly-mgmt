@@ -36,13 +36,16 @@ param parPolicyAssignmentParameterOverrides = {
         value: '/subscriptions/7ede5fbe-9dbe-4a13-8de0-9b1663b449e8/resourcegroups/rg-alz-logging-${parLocations[0]}/providers/Microsoft.OperationalInsights/workspaces/law-alz-${parLocations[0]}'
       }
       emailSecurityContact: {
-        value: 'security@yourcompany.com'
+        value: 'jens.diedrich@googlemail.com'
       }
       ascExportResourceGroupName: {
         value: 'rg-alz-asc-${parLocations[0]}'
       }
       ascExportResourceGroupLocation: {
         value: parLocations[0]
+      }
+      enableAscForKeyVault: {
+        value: 'DeployIfNotExists'
       }
     }
   }
